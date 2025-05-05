@@ -1,2 +1,5 @@
-# Estudos-Python
-Estudos sobre Python e exercícios.
+# Estudos Python
+
+Estudos e exercícios sobre Python.
+
+- Lógica de programação;
