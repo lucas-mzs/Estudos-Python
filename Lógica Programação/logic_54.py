@@ -1,4 +1,4 @@
-# try, finally
+# try, finally e else
 
 try:
     print('ABRIR ARQUIVO')
