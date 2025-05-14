@@ -6,5 +6,11 @@
 # O Python conhece todos os módulos e pacotes presentes nos caimnhas sys.path
 
 import logic_57_m
+from logic_57_m import soma
 
-print('Este módulo se chama', __name__)
+# print('Este módulo se chama', __name__)
+
+print(logic_57_m.variavel_modulo)
+
+print(logic_57_m.soma(2, 2))
+print(soma(3, 3))
