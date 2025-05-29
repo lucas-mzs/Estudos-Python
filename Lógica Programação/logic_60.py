@@ -4,24 +4,24 @@
 # Decoradores são usados para fazer o Python usar as funções decoradoras em outras funções.
 # Decoradores são "Syntax Sungar" (Açúcar sintático).
 
-def creat_function(func):
-    def internal(*args, **kwargs):
-        print('I will decorete you.')
+def criadora_de_funcao(func):
+    def interna(*args, **kwargs):
+        print('Eu vou decorar você.')
         for arg in args:
-            is_string(arg)
-        result = func(*args, **kwargs)
-        print(f'Your result was {result}')
-        print('Ok, now you have been decorated')
-        return result
-    return internal
+            é_string(arg)
+        resultado = func(*args, **kwargs)
+        print(f'Seu resultado foi {resultado}')
+        print('Ok, agora você foi decorado.')
+        return resultado
+    return interna
 
-@creat_function
-def reverse_string(string):
+@criadora_de_funcao
+def reverter_string(string):
     return string[::-1]
 
-def is_string(param):
+def é_string(param):
     if not isinstance(param, str):
-        raise TypeError('param is must be string')
+        raise TypeError('parâmetro deve ser string')
     
-reverse_string_checking_parameter = creat_function(reverse_string)
-inverted = reverse_string_checking_parameter('123')
+parametro_de_verificacao_de_string = criadora_de_funcao(reverter_string)
+inverter = parametro_de_verificacao_de_string('123')

@@ -1,23 +1,23 @@
 # Ordem dos decoradores
 
-def decorator_parameters(name):
-    def decorator(func):
-        print('Decoretor: ', name)
+def parametros_decoradores(nome):
+    def decorador(func):
+        print('Decorador: ', nome)
 
-        def your_new_function(*args, **kwargs):
+        def sua_nova_funcao(*args, **kwargs):
             res = func(*args, **kwargs)
-            end = f'{res} {name}'
-            return end
-        return your_new_function
-    return decorator
+            fim = f'{res} {nome}'
+            return fim
+        return sua_nova_funcao
+    return decorador
 
-@decorator_parameters(name='5')
-@decorator_parameters(name='4')
-@decorator_parameters(name='3')
-@decorator_parameters(name='2')
-@decorator_parameters(name='1')
-def sum(x, y):
+@parametros_decoradores(nome='5')
+@parametros_decoradores(nome='4')
+@parametros_decoradores(nome='3')
+@parametros_decoradores(nome='2')
+@parametros_decoradores(nome='1')
+def soma(x, y):
     return x + y
 
-ten_more_five = sum(10, 5)
-print(ten_more_five)
+dez_mais_cinco = soma(10, 5)
+print(dez_mais_cinco)
