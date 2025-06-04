@@ -18,14 +18,15 @@
 # json.dump - gera um arquivo
 # json.load
 
+import os
+
 caminho_arquivo = 'C:\\Users\\lucas\\Desktop\\Nova pasta\\'
 caminho_arquivo += 'logic_71.txt'
 
 # arquivo = open(caminho_arquivo, 'w')
-# 
 # arquivo.close()
 
-with open(caminho_arquivo, 'w+') as arquivo:
+with open(caminho_arquivo, 'w+', encoding='utf8') as arquivo:
     arquivo.write('Linha 1\n')
     arquivo.write('Linha 2\n')
     arquivo.writelines(
@@ -54,3 +55,7 @@ print()
 
 with open(caminho_arquivo, 'r') as arquivo:
     print(arquivo.read())
+
+# os.unlink(caminho_arquivo)
+# os.remove(caminho_arquivo)
+# os.rename(caminho_arquivo, 'logic_71-2.py')
