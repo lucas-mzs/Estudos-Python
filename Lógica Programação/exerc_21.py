@@ -1,6 +1,6 @@
 # Exercício:
 
-# Adiando execução de funções>
+# Adiando execução de funções:
 
 def soma(x, y):
     return x + y
