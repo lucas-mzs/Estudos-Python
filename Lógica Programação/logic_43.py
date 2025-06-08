@@ -1,4 +1,4 @@
-# Sets - Conjutnos em Python (tipo ser)
+# Sets - Conjuntos em Python (tipo ser)
 # Conjuntos são ensinados na matemática.
 # Representados graficamente pelo diagrama de Venn.
 # Sets em Python são mutáveis podém aceitam apenas tipos imutáveis como valor interno.

@@ -1,4 +1,4 @@
-# 
+# Higher Order Functions
 
 def criar_saudacao(saudacao):
     def saudar(nome):

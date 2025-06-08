@@ -1,5 +1,5 @@
 # Lista em python
-# Tipo list - Mutálvel
+# Tipo list - Mutável
 # Suporta vários valores de qualquer tipo 
 # Conhecimentos reutilizáveis - índices e fatiamento
 # Métodos úteis:
@@ -49,7 +49,7 @@ print(lista_a)
 
 
 # Cuidados com dados mutáveis
-# = - copiado o valor (imnutáveis)
+# = - copiado o valor (imutáveis)
 # = - aponta para o mesmo valor na memória (mutáveis)
 
 lista_a = ['Luiz', 'Maria']
