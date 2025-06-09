@@ -1,7 +1,7 @@
 # Sets - Conjuntos em Python (tipo ser)
 # Conjuntos são ensinados na matemática.
 # Representados graficamente pelo diagrama de Venn.
-# Sets em Python são mutáveis podém aceitam apenas tipos imutáveis como valor interno.
+# Sets em Python são mutáveis, porém aceitam apenas tipos imutáveis como valor interno.
 
 # Criando um set
 # set(iterável) ou {1, 2, 3}
@@ -34,7 +34,7 @@ s4.discard('Olá Mundo')
 print(s4)
 
 # Operadores úteis:
-# união | união (union) - Une
+# união | (union) - Une
 # interseção & (intersection) - Itens presentes em ambos
 # diferença - (difference) - Itens presentes no set da esquerda
 # diferença simétrica ^ - Itens que não estão em ambos
