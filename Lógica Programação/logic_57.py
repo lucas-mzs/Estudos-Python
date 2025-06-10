@@ -3,7 +3,7 @@
 # Você pode importar outro módulo inteiro ou parte do módulo.
 # O Python conhece a pasta onde o __main__ está e as portas abaixo dele.
 # Ele não reconhece portas e módulos acima do __main__ por padrão.
-# O Python conhece todos os módulos e pacotes presentes nos caimnhas sys.path
+# O Python conhece todos os módulos e pacotes presentes nos caminhos sys.path.
 
 import logic_57_m
 from logic_57_m import soma
