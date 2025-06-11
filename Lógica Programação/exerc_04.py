@@ -11,22 +11,27 @@
 #           A primiera letra do seu nome é {letra}
 #           A última letra do seu nome é {letra}
 # Se nada for digitado em nome ou idade:
-#       exiba: "Desculpe, vocÊ deixou campos vazios."
+#       exiba: "Desculpe, você deixou campos vazios."
 
 nome = input('Digite seu nome: ')
-idade = input('Digite seu idade: ')
+idade = int(input('Digite sua idade: '))
 
 if nome and idade:
-    print(f'Seu nome é {nome}')
-    print(f'Seu nome é invertido é {nome[::-1]}')
+    print(f'Seu nome é : {nome}.')
+    print(f'Sua nome invertido é : {nome[::-1]}')
+
+    if idade <= 18:
+        print('Você é maior de idade.')
+    else:
+        print('Você ainda não é maior de idade.')
 
     if ' ' in nome:
-        print('Seu nome contém espaços')
+        print('Seu nome contém espeços.')
     else:
-        print('Seu nome não contém espaços')
-
-    print(f'Seu nome tem {len(nome)} letras')
-    print(f'A primeira letra do seu nome é {nome[0]} ')
-    print(f'A última letra do seu nome é {nome[-1]} ')
+        print('Seu nome não contém espeços.')
+    
+    print(f'Seu nome tem {len(nome)} letras.')
+    print(f'A primeira letra do seu nome é : {nome[0]}')
+    print(f'A última letra do seu nome é : {nome[-1]}')
 else:
-    print("Desculpe, vocÊ deixou campos vazios.")
+    print('Desculpe, você deixou campos vazios.')
