@@ -16,7 +16,7 @@
 # os.rename - troca o nome ou move o arquivo
 # Vamos falar mais sobre o módulo (json), mas:
 # json.dump - gera um arquivo
-# json.load
+# json.load - lê um arquivo
 
 import os
 
