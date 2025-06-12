@@ -2,27 +2,14 @@
 
 # Qual letra apareceu mais vezes na frase?
 
-frase = 'O Python é uma linguagem de programação '\
-        'multiparadigma. ' \
-        'Python foi criado por Guido Van Rossum.'
+from collections import Counter
 
-i = 0
-qtd_apareceu_mais_vezes = 0
-ltr_apareceu_mais_vezes = ''
+frase = 'O Python é uma linguagem de programação multiparadigma. O Python foi criado por Guido Van Rossum.'
 
-while i < len(frase):
-    letra_atual = frase[i]
+frase_sem_espacos = frase.replace(' ', '')
 
-    if letra_atual == ' ':
-        i += 1
-        continue
+contador = Counter(frase_sem_espacos)
 
-    qtd_apareceu_mais_vezes_atual = frase.count(letra_atual)
+letra_mais_comun, qtd = contador.most_common(1)[0]
 
-    if qtd_apareceu_mais_vezes < qtd_apareceu_mais_vezes_atual:
-        qtd_apareceu_mais_vezes = qtd_apareceu_mais_vezes_atual
-        ltr_apareceu_mais_vezes = letra_atual
-
-    i += 1
-
-print(f'A letra que apareceu mais vezes foi "{ltr_apareceu_mais_vezes}" que apareceu {qtd_apareceu_mais_vezes}x')
+print(f'A letra que apareceu mais vezes foi "{letra_mais_comun}", que apareceu {qtd} vezes.')
