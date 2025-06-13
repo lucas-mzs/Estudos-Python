@@ -3,7 +3,7 @@
 """
 Calculo do primeiro dígito do CPF:
 CPF: 746.824.890-70
-Colete a soma do 9 primeiros dígitos do CPF multiplicando cada um 
+Colete a soma dos 9 primeiros dígitos do CPF multiplicando cada um 
 dos valores por uma contagem regressiva começando de 10.
 
 Ex: 746.824.890-70 (746824890)
@@ -14,7 +14,7 @@ Ex: 746.824.890-70 (746824890)
 Somar todos os resultados:
 70 + 36 + 48 + 56 + 12 + 20 + 32 + 27 + 0
 Multiplicar o resultado anterior por 10
-301 # 10 = 3010
+301 * 10 = 3010
 Obter o resto da divisão da conta anterior por 11
 3010 % 11 = 7
 Se o resultado anterior for maior que 9:
@@ -27,38 +27,19 @@ O primeiro dígito do CPF é 7.
 
 import random
 
-for _ in range(100):
-    nove_digitos = ''
-    for i in range(9):
-        nove_digitos += str(random.randint(0, 9))
+def gerar_cpf():
+    nove_digitos = ''.join(str(random.randint(0, 9)) for _ in range(9))
 
-    contador_regressivo_1 = 10
-
-    resultado_digito_1 = 0
-    for digito in nove_digitos:
-        resultado_digito_1 += int(digito) * contador_regressivo_1
-        contador_regressivo_1 -= 1
-    digito_1 = resultado_digito_1 * 10 % 11
+    soma_d1 = sum(int(dig) * peso for dig, peso in zip(nove_digitos, range(10, 1, -1)))
+    digito_1 = (soma_d1 * 10) % 11
     digito_1 = digito_1 if digito_1 <= 9 else 0
-    # print(digito_1 )
-
-    """
-    Calculo do segundo dígito do CPF:
-    Coleta a soma dos 9 primeiros dígitos do CPF, MAIS O PRIMEIRO DÍGITO, multiplicando 
-    cada um dos valores por uma contagem regressiva começando de 11.
-    """
 
     dez_digitos = nove_digitos + str(digito_1)
-    contador_regressivo_2 = 11
-
-    resultado_digito_2 = 0
-    for digito in dez_digitos:
-        resultado_digito_2 += int(digito) * contador_regressivo_2
-        contador_regressivo_2 -= 1
-    digito_2 = resultado_digito_2 * 10 % 11
+    soma_d2 = sum(int(dig) * peso for dig, peso in zip(dez_digitos, range(11, 1, -1)))
+    digito_2 = (soma_d2 * 10) % 11
     digito_2 = digito_2 if digito_2 <= 9 else 0
-    # print(digito_2)
 
-    cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
+    cpf = f'{nove_digitos}{digito_1}{digito_2}'
+    return cpf
 
-    print(cpf_gerado_pelo_calculo)
+print(gerar_cpf())

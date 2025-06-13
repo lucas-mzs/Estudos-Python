@@ -1,6 +1,6 @@
 # Exercício:
 
-# Sistem de perguntas e respostas.
+# Sistema de perguntas e respostas.
 
 perguntas = [
     {
