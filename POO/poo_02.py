@@ -1,5 +1,6 @@
 # Cada classe tem seu próprio self.
-# self - 
+# self - é usado para acessar atributos e métodos da própria instância (objeto).
+# __init__() - inicializa uma classe.
 
 class Pessoa:
     def __init__(self, nome, sobrenome):
