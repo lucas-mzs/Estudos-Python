@@ -1,12 +1,12 @@
 # @property - um getter no modo Pythônico
 # getter - um método para obter um atributo
 # modo Pythônico - modo do Python de fazer coisas
-# @property é uma propriedade do objeto, ela é um método que se comporta como um atributo.
+# @property é uma propriedade do objeto, ele é um método que se comporta como um atributo.
 # Geralmente é usada nas seguintes situações:
-# - como getter
-# - para evitar quebrar código cliente
-# - para habilitar setter
-# - para executar ações ao obter um atributo
+# - como getter;
+# - para evitar quebrar código cliente;
+# - para habilitar setter;
+# - para executar ações ao obter um atributo.
 # código cliente -  é o código que usa o seu código
 
 class Caneta:
