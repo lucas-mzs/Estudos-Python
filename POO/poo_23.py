@@ -1,7 +1,8 @@
 # abstractmethod para qualquer método já decorado.
-# Épossível criar @property, @property.setter, @classmethod, @staticmethod e métodos normais como abstratos,
+# É possível criar @property, @property.setter, @classmethod, @staticmethod e métodos normais como abstratos,
 # para isso use @abstractmethod como decorador mais interno.
 # Foo - Bar são palavras usados como placeholder para palavras que podem mudar na programação.
+
 
 from abc import ABC, abstractmethod
 
