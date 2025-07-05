@@ -2,7 +2,7 @@
 # Quer dizer que no Python, uma classe pode estender várias outras classes.
 # Herança Simples:
 # Animal -> Mamifero -> Humano -> Pessoa -> Cliente
-# Herança múltipla e mixins
+# Herança múltipla e mixins:
 # Log -> FileLog
 # Animal -> Mamifero -> Humano -> Pessoa -> Cliente
 # Cliente(Pessoa, FileLog)
