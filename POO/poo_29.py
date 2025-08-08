@@ -7,7 +7,7 @@
 # Quando vejo um pássaro que caminha como um pato, nada como um pato e grasna como um pato, eu chamo aquele pássaro de pato.
 # Para criar um context manager, os métodos __enter__ e __exit__ devem ser implementados.
 # O método __exit__ receberá a classe de exceção, a exceção e o traceback.
-# Se ele retornar True, exceção no with será suprimidas.
+# Se ele retornar True, a exceção no with será suprimida.
 # Ex:
 # while open('aula149.txt', 'w') as arquivo:
 #     ...
