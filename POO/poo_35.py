@@ -14,7 +14,7 @@
 
 # Métodos importantes da metaclass:
 # __new__ (mcs, name, bases, dct) (Cria a classe).
-# __new__ (cls, *args, *kwargs) (Cria e inicializa a instância).
+# __new__ (cls, *args, **kwargs) (Cria e inicializa a instância).
 
 # "Metaclasses são mágias mais profundas do que 99% dos usuários deveriam se preocupar. Se você quer saber se precisa delas, não
 # precisa (as pessoas que realmente precisam delas com certeza que precisam delas e não precisam de uma explicaçãosobre o porquê)."
